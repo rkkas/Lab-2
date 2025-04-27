@@ -1,0 +1,14 @@
+Cristina Araya ha votado correctamente.
+Emma Perez ha votado correctamente.
+Juan Lopez ha votado correctamente.
+
+Resultados de la elección:
+Felipe Lopez: 2 votos
+Paz Toro: 1 votos
+
+Reportando voto de Cristina Araya (ID: 12345):
+El voto ha sido reportado.
+
+Resultados después de reportar el voto:
+Felipe Lopez: 1 votos
+Paz Toro: 1 votos
