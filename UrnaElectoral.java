@@ -25,8 +25,7 @@ public class UrnaElectoral {
             return false;
         }
 
-        String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-
+        String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
         Voto nuevoVoto = new Voto(idCounter++, votante.getId(), candidatoID, timeStamp);
 
         for (Candidato candidato : listaCandidatos) {
@@ -54,23 +53,15 @@ public class UrnaElectoral {
         return false;
     }
 
-public Map<String, Integer> obtenerResultados() {
-    Map<String, Integer> resultados = new HashMap<>();
-    for (Candidato candidato : listaCandidatos) {
-        resultados.put(candidato.getNombre(), candidato.getVotosRecibidos().size());
-    }
-    return resultados;
-}
-
-    public LinkedList<Candidato> getListaCandidatos() {
-        return listaCandidatos;
+    public Map<String, Integer> obtenerResultados() {
+        Map<String, Integer> resultados = new HashMap<>();
+        for (Candidato candidato : listaCandidatos) {
+            resultados.put(candidato.getNombre(), candidato.getVotosRecibidos().size());
+        }
+        return resultados;
     }
 
-    public Stack<Voto> getHistorialVotos() {
-        return historialVotos;
-    }
-
-    public Queue<Voto> getVotosReportados() {
-        return votosReportados;
-    }
+    public LinkedList<Candidato> getListaCandidatos() { return listaCandidatos; }
+    public Stack<Voto> getHistorialVotos() { return historialVotos; }
+    public Queue<Voto> getVotosReportados() { return votosReportados; }
 }

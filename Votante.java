@@ -16,15 +16,11 @@ public class Votante {
         this.yaVoto = true;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public boolean isYaVoto() { return yaVoto; }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public boolean isYaVoto() {
-        return yaVoto;
-    }
+    public void setId(int id) { this.id = id; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setYaVoto(boolean yaVoto) { this.yaVoto = yaVoto; }
 }

@@ -48,7 +48,7 @@ public class Main {
         System.out.println("\nResultados después de reportar el voto:");
         mostrarResultados(urna.obtenerResultados());
     }
-    
+
     private static void mostrarResultados(Map<String, Integer> resultados) {
         for (Map.Entry<String, Integer> entry : resultados.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue() + " votos");

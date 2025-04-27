@@ -18,19 +18,13 @@ public class Candidato {
         votosRecibidos.add(v);
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public String getPartido() { return partido; }
+    public Queue<Voto> getVotosRecibidos() { return votosRecibidos; }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getPartido() {
-        return partido;
-    }
-
-    public Queue<Voto> getVotosRecibidos() {
-        return votosRecibidos;
-    }
+    public void setId(int id) { this.id = id; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setPartido(String partido) { this.partido = partido; }
+    public void setVotosRecibidos(Queue<Voto> votosRecibidos) { this.votosRecibidos = votosRecibidos; }
 }

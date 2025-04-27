@@ -12,35 +12,13 @@ public class Voto {
         this.timeStamp = timeStamp;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public int getVotanteId() { return votanteId; }
+    public int getCandidatoId() { return candidatoId; }
+    public String getTimeStamp() { return timeStamp; }
 
-    public int getVotanteId() {
-        return votanteId;
-    }
-
-    public int getCandidatoId() {
-        return candidatoId;
-    }
-
-    public String getTimeStamp() {
-        return timeStamp;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setVotanteId(int votanteId) {
-        this.votanteId = votanteId;
-    }
-
-    public void setCandidatoId(int candidatoId) {
-        this.candidatoId = candidatoId;
-    }
-
-    public void setTimeStamp(String timeStamp) {
-        this.timeStamp = timeStamp;
-    }
+    public void setId(int id) { this.id = id; }
+    public void setVotanteId(int votanteId) { this.votanteId = votanteId; }
+    public void setCandidatoId(int candidatoId) { this.candidatoId = candidatoId; }
+    public void setTimeStamp(String timeStamp) { this.timeStamp = timeStamp; }
 }
